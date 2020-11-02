@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Dealer_polim {
 
     /**
-     * @param args the command line arguments
+     * @param arg
      */
     public static void main(String[] args) {
       Scanner entrada = new Scanner(System.in); // clase de entrada de datos por teclado
