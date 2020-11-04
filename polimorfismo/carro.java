@@ -1,9 +1,12 @@
+package dealer_polim;
+
+ // clase padre
 public class carro {
     // declaracion de variables
     protected String marca;
     protected String modelo;
     protected int puertas; 
-    boolean encendido = false;
+    boolean encendido ;
     // metodo constructor  
     public carro(String marca, String modelo, int puertas) {
         this.marca = marca;
@@ -46,9 +49,22 @@ public class carro {
       return "Marca: "+marca+"/nModelo: "+modelo+"/nPuertas: "+puertas;
     }
     public void encender(){
-    
+     encendido = true;
+     if(encendido){
+     System.out.println("estado: encendido");
+     }
+     else{
+     System.out.println("estado: apagado");    
+     }    
     }
     public void apagar(){
-    
+    encendido = false;
+     if(encendido){
+     System.out.println("estado: encendido");
+     }
+     else{
+     System.out.println("estado: apagado");    
+     }    
+     
     }
 }

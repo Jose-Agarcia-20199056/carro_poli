@@ -1,14 +1,8 @@
 package dealer_polim;
 import java.util.Scanner;
-/**
- *
- * @author ginag
- */
+
 public class Dealer_polim {
 
-    /**
-     * @param arg
-     */
     public static void main(String[] args) {
       Scanner entrada = new Scanner(System.in); // clase de entrada de datos por teclado
       carro so= new sonata("14/5/2020","Hyundai","n20",4); //  objeto 1 aplicando el poli morfismo
@@ -40,42 +34,41 @@ public class Dealer_polim {
                {   // Aqui se mostraran los carros hyndai
                 System.out.println("^^Estos son los carros Hyndai^^"); 
                 System.out.println(so.obtenermodelo());
+                so.encender();
                 System.out.println("");
                 System.out.println(so2.obtenermodelo());
+                so2.apagar();
                 System.out.println("");
                 break;
                }    
-               
-               
                case 2 :
                {    // Aqui se mostraran los carros Toyota
                 System.out.println("^^Estos son los carros Toyota^^"); 
                 System.out.println(toyo.obtenermodelo());
+                toyo.apagar();
                 System.out.println("");
                 System.out.println(toyo2.obtenermodelo());
+                toyo2.encender();
                 System.out.println("");
                 break;
-               
                }
                case 3 :
                {  // Aqui se mostraran los carros Ford
                 System.out.println("^^Estos son los carros ^^"); 
                 System.out.println(ford1.obtenermodelo());
+                ford1.apagar();
                 System.out.println("");
                 System.out.println(ford2.obtenermodelo());
+                ford2.apagar();
                 System.out.println("");
                 break;
-               
                }
            default:// este default indicara al usuario que escribio un numero incorrecto del menu
          System.out.println("ERROR El numero ingresado esta fuera de rango");
         break;
            } 
-           
-       }while(select!=00);   
-       
+            }while(select!=00);   
        System.out.println("Gracias por su visita"); // Despedida del programa 
     }
-    
 }
-  //programa creado por:jose garcia inicializado: 29/10/20 finalizado: 1/11/2
+  //programa creado por:jose garcia inicializado: 29/10/20 finalizado: 1/11/20 modificado 3/11/20
